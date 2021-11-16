@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Road+Rage&family=Shippori+Antique+B1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Road+Rage&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    line-height: 1;
+    font-size: 20px;
+    background-color: rgb(0, 0, 0);
+    font-family: Trebuchet MS, Helvetica;
+}
+
+header {
+width: 100%;
+padding: 10px 0.5% 0px 0.5%;
+background: transparent;
+float: left;
+position: fixed;
+}
+
+.mainFoto {
+    margin-top: 5px;
+    width: 200px;
+    margin-top: 15px;
+    margin-left: 70px;
+
+}
+
+header #logo {
+    color: rgb(124, 124, 124);
+    cursor: pointer;
+    align-self: start;
+}
+header #logo span {
+    font-size: 1.5em;
+    line-height: 50px;
+    margin-left: 40px;
+    font-family: 'Shippori Antique B1', serif;
+}
+
+@media (min-width: 701px){
+#logo {
+    float: left;
+    width: 30%;
+    font-size: 1.1em;
+}
+#about {
+    float: right;
+    width: 67%;
+}
+}
+
+@media (min-width: 700px){
+    #logo{
+       margin-top: 15px;
+       width: 100%;
+       font-size: 1.5em;
+    }
+    #mainFoto{
+        margin-top: 15px;
+        margin-left: 70px;
+    }
+    #about{
+        float: left;
+        width: 100%;
+    }
+    }
+
+#about {
+text-align: center;
+font-size: 2em;
+line-height: 40px;
+margin-bottom: 10px;
+font-family: 'Road Rage', serif;
+}
+
+#about > a {
+    color: rgb(90, 90, 90);
+    text-decoration: underline;
+}
+
+#about > a:not(:last-child) {
+    margin-right: 7%;
+}
+
+.fixed {
+    z-index: 5000;
+    background-color: #fff;
+    border-bottom: 1px solid silver;
+}
+
+header.fixed #logo {
+    color: rgb(224, 224, 224);
+}
+
+.fixed #about a {color: skyblue;}
+.fixed #about a:hover {color: rgb(76, 109, 136);}
+
+
+
+
+
+
+
+
+
+
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
